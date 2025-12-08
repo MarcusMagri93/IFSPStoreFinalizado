@@ -45,7 +45,7 @@ namespace IFSPStore.Test
                 Console.WriteLine("Connected!");
 
                 var city1 = new City(1, "São Paulo", "SP");
-                var city2 = new City(2, "Campina", "SP");
+                var city2 = new City(2, "Campinas", "SP");
                 var city3 = new City(3, "Macuco", "RJ");
 
                 context.Cities.Add(city1);
@@ -140,8 +140,8 @@ namespace IFSPStore.Test
                 Console.WriteLine("Connected!");
                 var dataTime = DateTime.Now;
 
-                var user1 = new User(1, "Arthur", "12345", "arthur15", "arthurpires374@gmail.com", dataTime, dataTime, true);
-                var user2 = new User(2, "Andreia", "12345", "andreia15", "andreipires374@gmail.com", dataTime, dataTime, true);
+                var user1 = new User(1, "Raissa", "12345", "Raissa", "raissa374@gmail.com", dataTime, dataTime, true);
+                var user2 = new User(2, "Cookie", "12345", "Cookie", "Cookie@gmail.com", dataTime, dataTime, true);
 
                 context.Users.Add(user1);
                 context.Users.Add(user2);
