@@ -23,25 +23,7 @@ namespace IFSPStore.app.Register
             user.Email = txtEmail.Text;
             user.Login = txtLogin.Text;
             user.Password = txtPassword.Text;
-            user.Active = chkActive.Checked;
-
-            if (DateTime.TryParse(txtRegistrationDate.Text, out var dateRegistration))
-            {
-                user.RegistrationDate = dateRegistration;
-            }
-            else
-            {
-                user.RegistrationDate = DateTime.Now;
-            }
-
-            if (DateTime.TryParse(txtLoginDate.Text, out var dateLogin))
-            {
-                user.LoginDate = dateLogin;
-            }
-            else
-            {
-                user.LoginDate = DateTime.Now;
-            }
+            user.Active = true; // Define ativo por padrão (removido checkbox)
         }
 
         protected override void Save()
@@ -66,7 +48,7 @@ namespace IFSPStore.app.Register
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, @"IFSP Store", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, @"Sistema Comercial", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -78,7 +60,7 @@ namespace IFSPStore.app.Register
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, @"IFSP Store", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, @"Sistema Comercial", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -86,6 +68,7 @@ namespace IFSPStore.app.Register
         {
             users = _userService.Get<UserViewModel>().ToList();
             dataGridViewList.DataSource = users;
+            // Oculta colunas que não precisam aparecer
             dataGridViewList.Columns["Password"]!.Visible = false;
             dataGridViewList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
@@ -97,16 +80,7 @@ namespace IFSPStore.app.Register
             txtEmail.Text = record?.Cells["Email"].Value.ToString();
             txtLogin.Text = record?.Cells["Login"].Value.ToString();
             txtPassword.Text = record?.Cells["Password"].Value.ToString();
-            chkActive.Checked = (bool)(record?.Cells["Active"].Value ?? false);
-
-            txtRegistrationDate.Text = DateTime.TryParse(record?.Cells["RegistrationDate"].Value.ToString(), out var dataC)
-                ? dataC.ToString("g")
-                : "";
-
-            txtLoginDate.Text = DateTime.TryParse(record?.Cells["LoginDate"].Value.ToString(), out var dataL)
-                ? dataL.ToString("g")
-                : "";
+            // Demais campos (datas e checkbox) foram removidos da tela
         }
     }
 }
-

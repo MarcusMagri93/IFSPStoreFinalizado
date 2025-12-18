@@ -32,20 +32,14 @@
             txtEmail = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             txtLogin = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             txtPassword = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            chkActive = new ReaLTaiizor.Controls.MaterialCheckBox();
             txtId = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            txtRegistrationDate = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            txtLoginDate = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             tabPageRegister.SuspendLayout();
             tabControlRegister.SuspendLayout();
             SuspendLayout();
             // 
             // tabPageRegister
             // 
-            tabPageRegister.Controls.Add(txtLoginDate);
-            tabPageRegister.Controls.Add(txtRegistrationDate);
             tabPageRegister.Controls.Add(txtId);
-            tabPageRegister.Controls.Add(chkActive);
             tabPageRegister.Controls.Add(txtPassword);
             tabPageRegister.Controls.Add(txtLogin);
             tabPageRegister.Controls.Add(txtEmail);
@@ -55,10 +49,7 @@
             tabPageRegister.Controls.SetChildIndex(txtEmail, 0);
             tabPageRegister.Controls.SetChildIndex(txtLogin, 0);
             tabPageRegister.Controls.SetChildIndex(txtPassword, 0);
-            tabPageRegister.Controls.SetChildIndex(chkActive, 0);
             tabPageRegister.Controls.SetChildIndex(txtId, 0);
-            tabPageRegister.Controls.SetChildIndex(txtRegistrationDate, 0);
-            tabPageRegister.Controls.SetChildIndex(txtLoginDate, 0);
             // 
             // tabControlRegister
             // 
@@ -76,7 +67,7 @@
             txtName.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtName.HidePromptOnLeave = false;
             txtName.HideSelection = true;
-            txtName.Hint = "Name";
+            txtName.Hint = "Nome Completo";
             txtName.InsertKeyMode = InsertKeyMode.Default;
             txtName.LeadingIcon = null;
             txtName.Location = new Point(29, 16);
@@ -118,7 +109,7 @@
             txtEmail.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtEmail.HidePromptOnLeave = false;
             txtEmail.HideSelection = true;
-            txtEmail.Hint = "Email";
+            txtEmail.Hint = "E-mail";
             txtEmail.InsertKeyMode = InsertKeyMode.Default;
             txtEmail.LeadingIcon = null;
             txtEmail.Location = new Point(460, 92);
@@ -160,7 +151,7 @@
             txtLogin.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtLogin.HidePromptOnLeave = false;
             txtLogin.HideSelection = true;
-            txtLogin.Hint = "Login";
+            txtLogin.Hint = "Usuário (Login)";
             txtLogin.InsertKeyMode = InsertKeyMode.Default;
             txtLogin.LeadingIcon = null;
             txtLogin.Location = new Point(29, 92);
@@ -202,7 +193,7 @@
             txtPassword.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtPassword.HidePromptOnLeave = false;
             txtPassword.HideSelection = true;
-            txtPassword.Hint = "Password";
+            txtPassword.Hint = "Senha";
             txtPassword.InsertKeyMode = InsertKeyMode.Default;
             txtPassword.LeadingIcon = null;
             txtPassword.Location = new Point(29, 170);
@@ -210,7 +201,7 @@
             txtPassword.MaxLength = 32767;
             txtPassword.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtPassword.Name = "txtPassword";
-            txtPassword.PasswordChar = '\0';
+            txtPassword.PasswordChar = '*';
             txtPassword.PrefixSuffixText = null;
             txtPassword.PromptChar = '_';
             txtPassword.ReadOnly = false;
@@ -232,23 +223,6 @@
             txtPassword.UseSystemPasswordChar = false;
             txtPassword.ValidatingType = null;
             // 
-            // chkActive
-            // 
-            chkActive.AutoSize = true;
-            chkActive.Depth = 0;
-            chkActive.Location = new Point(483, 181);
-            chkActive.Margin = new Padding(0);
-            chkActive.MouseLocation = new Point(-1, -1);
-            chkActive.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            chkActive.Name = "chkActive";
-            chkActive.ReadOnly = false;
-            chkActive.Ripple = true;
-            chkActive.Size = new Size(125, 37);
-            chkActive.TabIndex = 7;
-            chkActive.Text = "User Active ?";
-            chkActive.UseAccentColor = false;
-            chkActive.UseVisualStyleBackColor = true;
-            // 
             // txtId
             // 
             txtId.AllowPromptAsInput = true;
@@ -261,7 +235,7 @@
             txtId.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtId.HidePromptOnLeave = false;
             txtId.HideSelection = true;
-            txtId.Hint = "Id";
+            txtId.Hint = "Código";
             txtId.InsertKeyMode = InsertKeyMode.Default;
             txtId.LeadingIcon = null;
             txtId.Location = new Point(620, 16);
@@ -291,90 +265,6 @@
             txtId.UseSystemPasswordChar = false;
             txtId.ValidatingType = null;
             // 
-            // txtRegistrationDate
-            // 
-            txtRegistrationDate.AllowPromptAsInput = true;
-            txtRegistrationDate.AnimateReadOnly = false;
-            txtRegistrationDate.AsciiOnly = false;
-            txtRegistrationDate.BackgroundImageLayout = ImageLayout.None;
-            txtRegistrationDate.BeepOnError = false;
-            txtRegistrationDate.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
-            txtRegistrationDate.Depth = 0;
-            txtRegistrationDate.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtRegistrationDate.HidePromptOnLeave = false;
-            txtRegistrationDate.HideSelection = true;
-            txtRegistrationDate.Hint = "Registration Date";
-            txtRegistrationDate.InsertKeyMode = InsertKeyMode.Default;
-            txtRegistrationDate.LeadingIcon = null;
-            txtRegistrationDate.Location = new Point(29, 259);
-            txtRegistrationDate.Mask = "";
-            txtRegistrationDate.MaxLength = 32767;
-            txtRegistrationDate.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtRegistrationDate.Name = "txtRegistrationDate";
-            txtRegistrationDate.PasswordChar = '\0';
-            txtRegistrationDate.PrefixSuffixText = null;
-            txtRegistrationDate.PromptChar = '_';
-            txtRegistrationDate.ReadOnly = false;
-            txtRegistrationDate.RejectInputOnFirstFailure = false;
-            txtRegistrationDate.ResetOnPrompt = true;
-            txtRegistrationDate.ResetOnSpace = true;
-            txtRegistrationDate.RightToLeft = RightToLeft.No;
-            txtRegistrationDate.SelectedText = "";
-            txtRegistrationDate.SelectionLength = 0;
-            txtRegistrationDate.SelectionStart = 0;
-            txtRegistrationDate.ShortcutsEnabled = true;
-            txtRegistrationDate.Size = new Size(250, 48);
-            txtRegistrationDate.SkipLiterals = true;
-            txtRegistrationDate.TabIndex = 9;
-            txtRegistrationDate.TabStop = false;
-            txtRegistrationDate.TextAlign = HorizontalAlignment.Left;
-            txtRegistrationDate.TextMaskFormat = MaskFormat.IncludeLiterals;
-            txtRegistrationDate.TrailingIcon = null;
-            txtRegistrationDate.UseSystemPasswordChar = false;
-            txtRegistrationDate.ValidatingType = null;
-            // 
-            // txtLoginDate
-            // 
-            txtLoginDate.AllowPromptAsInput = true;
-            txtLoginDate.AnimateReadOnly = false;
-            txtLoginDate.AsciiOnly = false;
-            txtLoginDate.BackgroundImageLayout = ImageLayout.None;
-            txtLoginDate.BeepOnError = false;
-            txtLoginDate.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
-            txtLoginDate.Depth = 0;
-            txtLoginDate.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtLoginDate.HidePromptOnLeave = false;
-            txtLoginDate.HideSelection = true;
-            txtLoginDate.Hint = "Login Date";
-            txtLoginDate.InsertKeyMode = InsertKeyMode.Default;
-            txtLoginDate.LeadingIcon = null;
-            txtLoginDate.Location = new Point(460, 259);
-            txtLoginDate.Mask = "";
-            txtLoginDate.MaxLength = 32767;
-            txtLoginDate.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtLoginDate.Name = "txtLoginDate";
-            txtLoginDate.PasswordChar = '\0';
-            txtLoginDate.PrefixSuffixText = null;
-            txtLoginDate.PromptChar = '_';
-            txtLoginDate.ReadOnly = false;
-            txtLoginDate.RejectInputOnFirstFailure = false;
-            txtLoginDate.ResetOnPrompt = true;
-            txtLoginDate.ResetOnSpace = true;
-            txtLoginDate.RightToLeft = RightToLeft.No;
-            txtLoginDate.SelectedText = "";
-            txtLoginDate.SelectionLength = 0;
-            txtLoginDate.SelectionStart = 0;
-            txtLoginDate.ShortcutsEnabled = true;
-            txtLoginDate.Size = new Size(250, 48);
-            txtLoginDate.SkipLiterals = true;
-            txtLoginDate.TabIndex = 10;
-            txtLoginDate.TabStop = false;
-            txtLoginDate.TextAlign = HorizontalAlignment.Left;
-            txtLoginDate.TextMaskFormat = MaskFormat.IncludeLiterals;
-            txtLoginDate.TrailingIcon = null;
-            txtLoginDate.UseSystemPasswordChar = false;
-            txtLoginDate.ValidatingType = null;
-            // 
             // UserForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -382,7 +272,7 @@
             ClientSize = new Size(846, 534);
             Location = new Point(0, 0);
             Name = "UserForm";
-            Text = "User Register";
+            Text = "Gestão de Usuários";
             tabPageRegister.ResumeLayout(false);
             tabPageRegister.PerformLayout();
             tabControlRegister.ResumeLayout(false);
@@ -395,9 +285,6 @@
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtLogin;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtEmail;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtName;
-        private ReaLTaiizor.Controls.MaterialCheckBox chkActive;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtId;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtLoginDate;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtRegistrationDate;
     }
 }

@@ -45,7 +45,7 @@ namespace IFSPStore.app
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { regsiterToolStripMenuItem, reportToolStripMenuItem, helpToolStripMenuItem, closeToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { regsiterToolStripMenuItem });
             menuStrip1.Location = new Point(3, 64);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(794, 24);
@@ -57,46 +57,46 @@ namespace IFSPStore.app
             regsiterToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { userToolStripMenuItem, categoryToolStripMenuItem, productToolStripMenuItem, cityToolStripMenuItem, customerToolStripMenuItem, saleToolStripMenuItem });
             regsiterToolStripMenuItem.Name = "regsiterToolStripMenuItem";
             regsiterToolStripMenuItem.Size = new Size(61, 20);
-            regsiterToolStripMenuItem.Text = "Register";
+            regsiterToolStripMenuItem.Text = "Cadastros";
             // 
             // userToolStripMenuItem
             // 
             userToolStripMenuItem.Name = "userToolStripMenuItem";
             userToolStripMenuItem.Size = new Size(180, 22);
-            userToolStripMenuItem.Text = "User";
+            userToolStripMenuItem.Text = "Usuários";
             userToolStripMenuItem.Click += userToolStripMenuItem_Click;
             // 
             // categoryToolStripMenuItem
             // 
             categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
             categoryToolStripMenuItem.Size = new Size(180, 22);
-            categoryToolStripMenuItem.Text = "Category";
+            categoryToolStripMenuItem.Text = "Categorias";
             categoryToolStripMenuItem.Click += categoryToolStripMenuItem_Click;
             // 
             // productToolStripMenuItem
             // 
             productToolStripMenuItem.Name = "productToolStripMenuItem";
             productToolStripMenuItem.Size = new Size(180, 22);
-            productToolStripMenuItem.Text = "Product";
+            productToolStripMenuItem.Text = "Produtos";
             // 
             // cityToolStripMenuItem
             // 
             cityToolStripMenuItem.Name = "cityToolStripMenuItem";
             cityToolStripMenuItem.Size = new Size(180, 22);
-            cityToolStripMenuItem.Text = "City";
+            cityToolStripMenuItem.Text = "Cidades";
             cityToolStripMenuItem.Click += cityToolStripMenuItem_Click;
             // 
             // customerToolStripMenuItem
             // 
             customerToolStripMenuItem.Name = "customerToolStripMenuItem";
             customerToolStripMenuItem.Size = new Size(180, 22);
-            customerToolStripMenuItem.Text = "Customer";
+            customerToolStripMenuItem.Text = "Clientes";
             // 
             // saleToolStripMenuItem
             // 
             saleToolStripMenuItem.Name = "saleToolStripMenuItem";
             saleToolStripMenuItem.Size = new Size(180, 22);
-            saleToolStripMenuItem.Text = "Sale";
+            saleToolStripMenuItem.Text = "Vendas";
             // 
             // reportToolStripMenuItem
             // 
@@ -126,7 +126,7 @@ namespace IFSPStore.app
             MainMenuStrip = menuStrip1;
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "IFSP Store";
+            Text = "IFSPStore 2025";
             WindowState = FormWindowState.Maximized;
             FormClosing += MainForm_FormClosing;
             menuStrip1.ResumeLayout(false);

@@ -51,7 +51,7 @@
             txtName.Depth = 0;
             txtName.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtName.HideSelection = true;
-            txtName.Hint = "Name";
+            txtName.Hint = "Nome da Categoria";
             txtName.LeadingIcon = null;
             txtName.Location = new Point(17, 18);
             txtName.MaxLength = 32767;
@@ -83,7 +83,7 @@
             txtId.Depth = 0;
             txtId.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtId.HideSelection = true;
-            txtId.Hint = "ID";
+            txtId.Hint = "Código";
             txtId.LeadingIcon = null;
             txtId.Location = new Point(493, 18);
             txtId.MaxLength = 32767;
@@ -111,7 +111,7 @@
             ClientSize = new Size(629, 277);
             Location = new Point(0, 0);
             Name = "CategoryForm";
-            Text = "Category Register";
+            Text = "Controle de Categorias";
             tabPageRegister.ResumeLayout(false);
             tabPageRegister.PerformLayout();
             ResumeLayout(false);

@@ -75,7 +75,7 @@
             tabPageRegister.Padding = new Padding(3);
             tabPageRegister.Size = new Size(666, 291);
             tabPageRegister.TabIndex = 0;
-            tabPageRegister.Text = "Register";
+            tabPageRegister.Text = "Dados do Registro";
             tabPageRegister.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -104,7 +104,7 @@
             btnCancel.NoAccentTextColor = Color.Empty;
             btnCancel.Size = new Size(77, 36);
             btnCancel.TabIndex = 1;
-            btnCancel.Text = "Cancel";
+            btnCancel.Text = "Cancelar";
             btnCancel.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnCancel.UseAccentColor = false;
             btnCancel.UseVisualStyleBackColor = true;
@@ -126,7 +126,7 @@
             btnSalveRegister.NoAccentTextColor = Color.Empty;
             btnSalveRegister.Size = new Size(64, 36);
             btnSalveRegister.TabIndex = 0;
-            btnSalveRegister.Text = "Save";
+            btnSalveRegister.Text = "Salvar";
             btnSalveRegister.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnSalveRegister.UseAccentColor = false;
             btnSalveRegister.UseVisualStyleBackColor = true;
@@ -142,7 +142,7 @@
             tabPageList.Padding = new Padding(3);
             tabPageList.Size = new Size(666, 291);
             tabPageList.TabIndex = 1;
-            tabPageList.Text = "List";
+            tabPageList.Text = "Consulta";
             tabPageList.UseVisualStyleBackColor = true;
             tabPageList.Enter += tabPageList_Enter;
             // 
@@ -173,7 +173,7 @@
             btnDelete.NoAccentTextColor = Color.Empty;
             btnDelete.Size = new Size(73, 36);
             btnDelete.TabIndex = 4;
-            btnDelete.Text = "Delete";
+            btnDelete.Text = "Excluir";
             btnDelete.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnDelete.UseAccentColor = false;
             btnDelete.UseVisualStyleBackColor = true;
@@ -195,7 +195,7 @@
             btnNew.NoAccentTextColor = Color.Empty;
             btnNew.Size = new Size(64, 36);
             btnNew.TabIndex = 2;
-            btnNew.Text = "New";
+            btnNew.Text = "Novo";
             btnNew.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnNew.UseAccentColor = false;
             btnNew.UseVisualStyleBackColor = true;
@@ -217,7 +217,7 @@
             btnEdit.NoAccentTextColor = Color.Empty;
             btnEdit.Size = new Size(64, 36);
             btnEdit.TabIndex = 3;
-            btnEdit.Text = "Edit";
+            btnEdit.Text = "Alterar";
             btnEdit.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnEdit.UseAccentColor = false;
             btnEdit.UseVisualStyleBackColor = true;

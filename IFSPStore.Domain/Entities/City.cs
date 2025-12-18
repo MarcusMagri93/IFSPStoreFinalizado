@@ -14,6 +14,7 @@ namespace IFSPStore.Domain.Entities
             Name = name;
             State = state;
             
+
         }
 
         public string Name { get; set; }

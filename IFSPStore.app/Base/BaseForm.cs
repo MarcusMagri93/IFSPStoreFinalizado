@@ -20,7 +20,8 @@ namespace IFSPStore.app.Base
         #region Events
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show(@"Are you sure cancel?", @"IFSPStore", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes){
+            if (MessageBox.Show(@"Deseja cancelar a operação e limpar a tela?", @"Sistema Comercial", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
                 ClearFields();
                 tabControlRegister.SelectedIndex = 1;
             }
@@ -45,7 +46,7 @@ namespace IFSPStore.app.Base
         {
             if (dataGridViewList.SelectedRows.Count > 0)
             {
-                if (MessageBox.Show(@"Are you sure you want delete?", @"IFSPStore", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show(@"Tem certeza que deseja excluir este registro?", @"Sistema Comercial", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     var id = (int)dataGridViewList.SelectedRows[0].Cells["Id"].Value;
                     Delete(id);
@@ -55,7 +56,7 @@ namespace IFSPStore.app.Base
 
             else
             {
-                MessageBox.Show(@"Please, select any row!", @"IFSPStore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(@"Por favor, selecione um item na lista!", @"Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -86,7 +87,7 @@ namespace IFSPStore.app.Base
         protected virtual void New()
         {
             ClearFields();
-            tabControlRegister.SelectedIndex =0;
+            tabControlRegister.SelectedIndex = 0;
             tabPageRegister.Focus();
         }
 
@@ -104,8 +105,8 @@ namespace IFSPStore.app.Base
         {
             if (dataGridViewList.SelectedRows.Count > 0)
             {
-                IsEditMode=true;
-                var record =dataGridViewList.SelectedRows[0];
+                IsEditMode = true;
+                var record = dataGridViewList.SelectedRows[0];
                 GridToForm(record);
                 tabControlRegister.SelectedIndex = 0;
                 tabPageRegister.Focus();
@@ -113,13 +114,13 @@ namespace IFSPStore.app.Base
 
             else
             {
-                MessageBox.Show(@"Please, select any row!", @"IFSPStore", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(@"Selecione um registro para editar!", @"Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        protected virtual void GridToForm(DataGridViewRow? record) 
+        protected virtual void GridToForm(DataGridViewRow? record)
         {
-            
+
         }
 
         protected virtual void PopulateGrid()

@@ -59,7 +59,7 @@
             txtName.Depth = 0;
             txtName.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtName.HideSelection = true;
-            txtName.Hint = "Name";
+            txtName.Hint = "Nome da Cidade";
             txtName.LeadingIcon = null;
             txtName.Location = new Point(16, 26);
             txtName.MaxLength = 32767;
@@ -91,7 +91,7 @@
             txtId.Depth = 0;
             txtId.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtId.HideSelection = true;
-            txtId.Hint = "ID";
+            txtId.Hint = "Código";
             txtId.LeadingIcon = null;
             txtId.Location = new Point(530, 26);
             txtId.MaxLength = 32767;
@@ -124,7 +124,7 @@
             cboState.Font = new Font("Roboto Medium", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
             cboState.ForeColor = Color.FromArgb(222, 0, 0, 0);
             cboState.FormattingEnabled = true;
-            cboState.Hint = "State";
+            cboState.Hint = "Estado (UF)";
             cboState.IntegralHeight = false;
             cboState.ItemHeight = 43;
             cboState.Items.AddRange(new object[] { "AC", "", "AL", "", "AP", "", "AM", "", "BA", "", "CE", "", "DF", "", "ES", "", "GO", "", "MA", "", "MT", "", "MS", "", "MG", "", "PA", "", "PB", "", "PR", "", "PE", "", "PI", "", "RJ", "", "RN", "", "RS", "", "RO", "", "RR", "", "SC", "", "SP", "", "SE", "", "TO" });
@@ -143,7 +143,7 @@
             ClientSize = new Size(780, 315);
             Location = new Point(0, 0);
             Name = "CityForm";
-            Text = "City Register";
+            Text = "Cadastro de Cidades";
             tabPageRegister.ResumeLayout(false);
             tabControlRegister.ResumeLayout(false);
             ResumeLayout(false);
